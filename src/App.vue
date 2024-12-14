@@ -1,9 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import AComponent from '@/components/AComponent.vue'
+import BComponent from '@/components/BComponent.vue'
 </script>
 
 <template>
-	<HelloWorld />
+	<AComponent />
+	<hr />
+	<BComponent />
 </template>
 
 <style scoped></style>
