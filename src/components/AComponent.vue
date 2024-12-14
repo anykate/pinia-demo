@@ -10,16 +10,16 @@ const { incrementCount } = store
 store.count = 10 // maintains reactivity and available to all components
 
 // Mutate state passing object
-// store.$patch({
-//   count: store.count + 100,
-//   name: "Aryamane"
-// })
+store.$patch({
+	count: store.count + 100,
+	name: 'Aryamane',
+})
 
 // Mutate state passing function
-// store.$patch((state)=>{
-//   state.count +=101
-//   state.items.push('Vue3')
-// })
+store.$patch((state) => {
+	state.count += 101
+	state.items.push('Vue3')
+})
 </script>
 <template>
 	<div>
